@@ -153,6 +153,10 @@ img { max-width: 100%; display: block; }
 
 /* ===== Video Section ===== */
 .video-grid { max-width: 800px; margin: 0 auto; }
+.video-grid-multi {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 28px;
+  max-width: 1000px; margin: 0 auto;
+}
 .video-card {
   position: relative; padding-bottom: 56.25%; height: 0; border-radius: 20px; overflow: hidden;
   box-shadow: 0 8px 40px rgba(0,0,0,0.12);
